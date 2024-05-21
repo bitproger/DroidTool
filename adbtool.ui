@@ -36,7 +36,7 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -102,9 +102,12 @@
         <property name="editable">
          <bool>false</bool>
         </property>
+        <property name="currentText">
+         <string>system</string>
+        </property>
         <item>
          <property name="text">
-          <string>Система</string>
+          <string>system</string>
          </property>
         </item>
         <item>
@@ -139,11 +142,121 @@
          <string>Установить APK</string>
         </property>
        </widget>
+       <widget class="QComboBox" name="RemoveSelector">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>120</y>
+          <width>161</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DelButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Удалить приложение</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="title">
-        <string>Tab 2</string>
+        <string>Fastboot</string>
        </attribute>
+       <widget class="QPushButton" name="SearchBtn_FB">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>131</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Найти устройство</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="StatusConn_FB">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>10</y>
+          <width>141</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ОТКЛЮЧЕНО</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="RebootBtn_FB">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Перезагрузить</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="SelectorTypeReboot_FB">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>40</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>bootloader</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>fastboot</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>recovery</string>
+         </property>
+        </item>
+       </widget>
       </widget>
      </widget>
     </item>
